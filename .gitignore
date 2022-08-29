@@ -1,0 +1,4 @@
+db/
+RISC_V.qpf
+RISC_V.qsf
+*.v.bak
