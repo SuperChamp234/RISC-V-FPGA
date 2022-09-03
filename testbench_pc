@@ -1,0 +1,17 @@
+module ProgramCounter_tb(input clk,
+    input rst,
+    input [31:0] pc,
+    output reg [31:0] next_pc);
+
+always@(posedge clk)
+    begin
+        if(rst!=0)
+            begin
+                next_pc <= 0;
+            end
+        else
+            begin
+                next_pc <= pc + 1;
+				end
+     end
+endmodule
