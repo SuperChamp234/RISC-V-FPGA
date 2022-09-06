@@ -1,30 +1,34 @@
 module ProgramCounter(input clk,
     input rst,
-    input [31:0] pc,
-    output reg [31:0] next_pc
+    input[7:0] pc,
+     input j_signal,
+    output reg [7:0] next_pc
 	 
 	);
-	 
+				 
 always@(posedge clk)
 
     begin
 
-        if(rst!=0)
+        if(clk!=0 && j_signal <= 0)
 		  
             begin
                 next_pc <= pc + 1;
             end
 				
-        else if(rst!=1)
+	else if(rst<=0 && j_signal<=0)
+	  begin
+	 next_pc <= next_pc +1 ;
+	  end
+				 
+        else if(clk!=1)
 		  
             begin
                 next_pc <= 0;
-				end
+	     end
    
-		   else 
-			     
-				 
-				  next_pc <= pc;
-				
-		  end
+	     else 
+	      next_pc <= pc;
+		
+		 end
 endmodule
