@@ -44,7 +44,26 @@ module decoder(
       
      
    always @ (posedge clk) begin
-      imm <=0;
+      is_r_instr <= 0;
+      is_u_instr <= 0;
+      is_i_instr <= 0;
+      is_s_instr <= 0;
+      is_b_instr <= 0;
+      is_j_instr <= 0;
+      is_i1_instr <= 0;
+      is_i2_instr <= 0;
+      func7_valid <= 0;
+      rs2_valid <= 0;
+      rs1_valid <= 0;
+      rd_valid <= 0;
+      func3_valid <= 0;
+      imm_valid <= 0;
+      imm <= 32'b0;
+      
+      for(i=0;i<38;i=i+1) begin
+         instr_bus[i] <= 0;
+      end
+      
       //determine the type of instruction
       is_r_instr <= instr[6:0] === 7'b0110011;
       is_i_instr <= (instr[6:0] === 7'b0010011) || (instr[6:0] === 7'b1100111) || (instr[6:0] === 7'b0000011);
@@ -64,19 +83,73 @@ module decoder(
       opcode <= instr[6:0];
       
       //determine the fields above are valid in the instruction or not
-      func7_valid <= is_r_instr;
-      rs2_valid <= is_r_instr || is_s_instr || is_b_instr;
-      rs1_valid <= is_r_instr || is_i_instr || is_s_instr || is_b_instr;
-      rd_valid <= is_r_instr || is_i_instr || is_u_instr || is_j_instr;
-      func3_valid <= rs1_valid;
-      imm_valid <= ~is_r_instr;
-   
-      imm <= is_i_instr ? {  {20{1'b0}},  instr[31:20]  } :
-                is_s_instr ? {{21{instr[31]}}, instr[30:25], instr[11:7]} :
-                is_b_instr ? { {20{instr[31]}}, instr[7], instr[30:25], instr[11:8], 1'b0} :
-                is_u_instr ? { instr[31:12], 12'b0 } :
-                is_j_instr ? { { { { { {12{instr[31]}} , instr[19:12] } , instr[20] } , instr[30:25] } , instr[24:21] }, 1'b0} :
-                32'b0;
+//      func7_valid <= is_r_instr;
+//      rs2_valid <= is_r_instr || is_s_instr || is_b_instr;
+//      rs1_valid <= is_r_instr || is_i_instr || is_s_instr || is_b_instr;
+//      rd_valid <= is_r_instr || is_i_instr || is_u_instr || is_j_instr;
+//      func3_valid <= rs1_valid;
+//      imm_valid <= ~is_r_instr;
+      
+      if(is_r_instr) begin
+         func7_valid <= 1;
+         rs2_valid <= 1;
+         rs1_valid <= 1;
+         rd_valid <= 1;
+         func3_valid <= 1;
+         imm_valid <= 0;
+         imm <= 32'd0;
+      end
+      else if(is_i_instr) begin
+         func7_valid <= 0;
+         rs2_valid <= 0;
+         rs1_valid <= 1;
+         rd_valid <= 1;
+         func3_valid <= 1;
+         imm_valid <= 1;
+         imm <= {{20{1'b0}},instr[31:20]};
+      end
+      else if(is_s_instr) begin
+         func7_valid <= 0;
+         rs2_valid <= 1;
+         rs1_valid <= 1;
+         rd_valid <= 0;
+         func3_valid <= 1;
+         imm_valid <= 1;
+         imm <= {{21{instr[31]}}, instr[30:25], instr[11:7]};
+      end
+      else if(is_b_instr) begin
+         func7_valid <= 0;
+         rs2_valid <= 1;
+         rs1_valid <= 1;
+         rd_valid <= 0;
+         func3_valid <= 1;
+         imm_valid <= 1;
+         imm <= { {20{instr[31]}}, instr[7], instr[30:25], instr[11:8], 1'b0};
+      end
+      else if(is_u_instr) begin
+         func7_valid <= 0;
+         rs2_valid <= 0;
+         rs1_valid <= 0;
+         rd_valid <= 1;
+         func3_valid <= 0;
+         imm_valid <= 1;
+         imm <= { instr[31:12], 12'b0 };
+      end
+      else if(is_j_instr) begin
+         func7_valid <= 0;
+         rs2_valid <= 0;
+         rs1_valid <= 0;
+         rd_valid <= 1;
+         func3_valid <= 0;
+         imm_valid <= 1;
+         imm <= { { { { { {12{instr[31]}} , instr[19:12] } , instr[20] } , instr[30:25] } , instr[24:21] }, 1'b0};
+      end
+//      imm <= is_i_instr ? {  {20{1'b0}},  instr[31:20]  } :
+//                is_s_instr ? {{21{instr[31]}}, instr[30:25], instr[11:7]} :
+//                is_b_instr ? { {20{instr[31]}}, instr[7], instr[30:25], instr[11:8], 1'b0} :
+//                is_u_instr ? { instr[31:12], 12'b0 } :
+//                is_j_instr ? { { { { { {12{instr[31]}} , instr[19:12] } , instr[20] } , instr[30:25] } , instr[24:21] }, 1'b0} :
+//                32'b0;
       temp_imm  <= {imm[5],imm[6], imm[7], imm[8], imm[9], imm[10], imm[11]};
       
       instr_bus[0] <= (is_r_instr && (func3 == 3'h0) && (func7==7'h00)); //add
