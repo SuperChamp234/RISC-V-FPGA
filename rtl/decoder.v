@@ -18,13 +18,38 @@ module decoder(
      reg is_r_instr, is_u_instr, is_i_instr, is_s_instr, is_b_instr, is_j_instr, is_i1_instr, is_i2_instr;
      reg [6:0] opcode;
      reg [6:0] temp_imm;
+     reg [7:0] i;
      
-   always @ (instr) begin
+   initial begin
+      is_r_instr <= 0;
+      is_u_instr <= 0;
+      is_i_instr <= 0;
+      is_s_instr <= 0;
+      is_b_instr <= 0;
+      is_j_instr <= 0;
+      is_i1_instr <= 0;
+      is_i2_instr <= 0;
+      func7_valid <= 0;
+      rs2_valid <= 0;
+      rs1_valid <= 0;
+      rd_valid <= 0;
+      func3_valid <= 0;
+      imm_valid <= 0;
+      imm <= 32'b0;
+      
+      for(i=0;i<38;i=i+1) begin
+         instr_bus[i] <= 0;
+      end
+   end
+      
+     
+   always @ (posedge clk) begin
+      imm <=0;
       //determine the type of instruction
       is_r_instr <= instr[6:0] === 7'b0110011;
-      is_i_instr <= instr[6:0] === 7'b00x0011 || 7'b1100111;
-      is_i1_instr <= instr[6:0] == 7'b0010011;
-      is_i2_instr <= instr[6:0] == 7'b0000011;
+      is_i_instr <= (instr[6:0] === 7'b0010011) || (instr[6:0] === 7'b1100111) || (instr[6:0] === 7'b0000011);
+      is_i1_instr <= instr[6:0] === 7'b0010011;
+      is_i2_instr <= instr[6:0] === 7'b0000011;
       is_s_instr <= instr[6:0] === 7'b0100011;
       is_b_instr <= instr[6:0] === 7'b1100011;
       is_j_instr <= instr[6:0] === 7'b1101111;
@@ -46,7 +71,7 @@ module decoder(
       func3_valid <= rs1_valid;
       imm_valid <= ~is_r_instr;
    
-      imm[31:0] <= is_i_instr ? {   {21{instr[31]}},  instr[30:20]  } :
+      imm <= is_i_instr ? {  {20{1'b0}},  instr[31:20]  } :
                 is_s_instr ? {{21{instr[31]}}, instr[30:25], instr[11:7]} :
                 is_b_instr ? { {20{instr[31]}}, instr[7], instr[30:25], instr[11:8], 1'b0} :
                 is_u_instr ? { instr[31:12], 12'b0 } :
