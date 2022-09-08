@@ -21,14 +21,14 @@ module decoder(
      reg [7:0] i;
      
    initial begin
-      is_r_instr <= 0;
-      is_u_instr <= 0;
-      is_i_instr <= 0;
-      is_s_instr <= 0;
-      is_b_instr <= 0;
-      is_j_instr <= 0;
-      is_i1_instr <= 0;
-      is_i2_instr <= 0;
+//      is_r_instr = 0;
+//      is_u_instr <= 0;
+//      is_i_instr <= 0;
+//      is_s_instr <= 0;
+//      is_b_instr <= 0;
+//      is_j_instr <= 0;
+//      is_i1_instr <= 0;
+//      is_i2_instr <= 0;
       func7_valid <= 0;
       rs2_valid <= 0;
       rs1_valid <= 0;
@@ -44,14 +44,14 @@ module decoder(
       
      
    always @ (posedge clk) begin
-      is_r_instr <= 0;
-      is_u_instr <= 0;
-      is_i_instr <= 0;
-      is_s_instr <= 0;
-      is_b_instr <= 0;
-      is_j_instr <= 0;
-      is_i1_instr <= 0;
-      is_i2_instr <= 0;
+//      is_r_instr <= 0;
+//      is_u_instr <= 0;
+//      is_i_instr <= 0;
+//      is_s_instr <= 0;
+//      is_b_instr <= 0;
+//      is_j_instr <= 0;
+//      is_i1_instr <= 0;
+//      is_i2_instr <= 0;
       func7_valid <= 0;
       rs2_valid <= 0;
       rs1_valid <= 0;
@@ -65,14 +65,14 @@ module decoder(
       end
       
       //determine the type of instruction
-      is_r_instr <= instr[6:0] === 7'b0110011;
-      is_i_instr <= (instr[6:0] === 7'b0010011) || (instr[6:0] === 7'b1100111) || (instr[6:0] === 7'b0000011);
-      is_i1_instr <= instr[6:0] === 7'b0010011;
-      is_i2_instr <= instr[6:0] === 7'b0000011;
-      is_s_instr <= instr[6:0] === 7'b0100011;
-      is_b_instr <= instr[6:0] === 7'b1100011;
-      is_j_instr <= instr[6:0] === 7'b1101111;
-      is_u_instr <= instr[6:0] === 7'b0x10111;
+      is_r_instr = instr[6:0] === 7'b0110011;
+      is_i_instr = (instr[6:0] === 7'b0010011) || (instr[6:0] === 7'b1100111) || (instr[6:0] === 7'b0000011);
+      is_i1_instr = instr[6:0] === 7'b0010011;
+      is_i2_instr = instr[6:0] === 7'b0000011;
+      is_s_instr = instr[6:0] === 7'b0100011;
+      is_b_instr = instr[6:0] === 7'b1100011;
+      is_j_instr = instr[6:0] === 7'b1101111;
+      is_u_instr = instr[6:0] === 7'b0x10111;
       
       //store the different types of existing fields
       rs2 <= instr[24:20];
