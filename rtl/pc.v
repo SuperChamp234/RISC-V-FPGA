@@ -6,11 +6,11 @@ module ProgramCounter(input clk,
 	 
 	);
 				 
-always@(posedge clk)
+always@(clk)
 
     begin
 
-        if(clk!=0 && j_signal <= 0)
+        if(j_signal <= 0)
 		  
             begin
                 next_pc <= pc + 1;
