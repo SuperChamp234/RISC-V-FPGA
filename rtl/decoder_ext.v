@@ -12,7 +12,7 @@ module decoder_ext(
    output func3_valid,
    output func7_valid,
    output imm_valid,
-   output [31:0] imm,
+   output signed [31:0] imm,
    output [37:0] instr_bus
 );
    wire is_i1_instr, is_i2_instr, func3, func7;

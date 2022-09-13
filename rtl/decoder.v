@@ -3,7 +3,7 @@ module decoder(
    input  [31:0] instr,
    output reg [4:0] rs2,
    output reg [4:0] rs1,
-   output [31:0] imm,
+   output signed [31:0] imm,
    output reg [4:0] rd,
    output reg [2:0] func3,
    output reg [6:0] func7,

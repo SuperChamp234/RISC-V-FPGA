@@ -11,9 +11,7 @@ module imem(
    reg [7:0] i;
    always @ (posedge clk or posedge reset) begin
       if(reset) begin
-         for(i =0;i<=63;i=i+1) begin
-            ins_mem[i] <= 0;
-         end
+         ins_mem[0] <= 0;
          data_out_reg <= 0;
       end
       else begin

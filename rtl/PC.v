@@ -8,7 +8,7 @@ module PC(
   reg [31:0] next_pc_reg;
   always @ ( posedge clk) begin
     if(rst)
-      next_pc_reg <= 32'd0;
+      next_pc_reg <= 31'd0;
     else if(j_signal)
       next_pc_reg <= j_signal;
     else
