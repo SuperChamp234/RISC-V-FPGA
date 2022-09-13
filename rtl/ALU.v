@@ -10,24 +10,80 @@ output reg ALUoutput
 
 
 );
-always@(ctrl or rs1 or rs2)
-begin
-    case(ctrl)
-	 37'b000000000000000000000000000000000000000000 begin zero <= 0;
-	 ALU_output <= rs1&rs2;
-	 37'b000000000000000000000000000000000000000001 begin zero <= 0;
-	 ALUoutput <= rs1|rs2;
-	 37'b000000000000000000000000000000000000000010 begin zero <= 0;
-	 ALUoutput <= rs1+rs2;
-	 37'b000000000000000000000000000000000000001000 begin zero <= 0;
-         ALUoutput <= rs1-rs2;
-         37'b000000000000000000000000000000000000100000 begin zero <= 0;
-         ALUoutput <= rs1&imm_valid;
-         37'b000000000000000000000000000000000010000000 begin zero <= 0;
-         ALUoutput <= rs2&imm_valid;
-	 37'b000000000000000000000000000000001000000000 begin zero <= 0;
-         ALUoutput <= rs2|imm_valid;
-         37'b000000000000000000000000000000010000000000 begin zero <= 0;
-	 ALUoutput <= rs1|imm_valid;
-         37'b000000000000000000000000000001000000000000 begin zero <= 0;
-       
+
+if(instr[0]==1)
+   begin
+	ALUoutput<=rs1+rs2;
+	end 
+	
+else if(instr[1]==1)
+   begin
+   ALUoutput <= rs1 - rs2;
+	end
+	
+else if(instr[2]==1)
+   begin
+   ALUoutput <= rs1 ^ rs2;
+	end
+	
+else if(instr[3]==1)
+    begin
+	 ALUoutput <= rs1 | rs2;
+	 end
+	 
+else if(instr[4]==1)
+     begin
+	  ALUoutput <= rs1 & rs2;
+	  end
+
+else if(instr[5]==1)
+     begin
+	  ALUoutput <= rs1 << rs2;
+	  end
+
+else if(instr[6]==1)
+     begin
+	  ALUoutput <= rs1 >> rs2;
+	  end
+	  
+else if(instr[7]==1)
+     begin
+	  ALUoutput <= rs1
+	  end
+	  
+else if(instr[8]==1)
+     begin
+	  ALUoutput <= (rs1 < rs2)?1:0;
+	  end
+
+else if(instr[9]==1)
+     begin
+	  ALUoutput <= 
+	  end
+
+else if(instr[10]==1)
+     begin
+	  ALUoutput <= rs1 + imm;
+     end
+	  
+else if(instr[11]==1)
+     begin
+	  ALUoutput <= rs1 - imm;
+     end
+	
+else if(instr[12]==1)
+     begin
+	  ALUoutput <= rs1 | imm;
+     end
+	
+else if(instr[13]==1)
+     begin
+	  ALUoutput <= rs1 & imm;
+     end
+
+else if(instr[14]==1)
+     begin
+	  ALUoutput <= 
+	 
+    
+    
