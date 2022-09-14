@@ -1,7 +1,7 @@
 module imem(
    input clk,
    input reset,
-   input [4:0] address,
+   input [31:0] address,
    input [31:0] data_in,
    input rw,
    output [31:0] data_out
@@ -16,11 +16,11 @@ module imem(
       end
       else begin
          if(~rw) begin
-            ins_mem[address] <= data_in;
+            ins_mem[address[4:0]] <= data_in;
             data_out_reg <= 0;
          end
          else if(rw) begin
-            data_out_reg <= ins_mem[address];
+            data_out_reg <= ins_mem[address[4:0]];
          end
       end
    end

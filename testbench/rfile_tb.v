@@ -2,9 +2,9 @@ module rfile_tb;
 
    reg clk; reg reset;
   
-   reg [4:0] rs1_a;
-   reg [4:0] rs2_a;
-   reg [4:0] rd;
+   reg [31:0] rs1_a;
+   reg [31:0] rs2_a;
+   reg [31:0] rd;
    reg rd_write, read_rs1, read_rs2;
 	wire signed [31:0] rs1_data;
    wire signed [31:0] rs2_data;
@@ -21,14 +21,14 @@ module rfile_tb;
 	always #10 clk = ~clk;
 	initial begin
       read_rs1 = 0; read_rs2=0;rd_write = 1;
-      rd=5'd1; rd_data = -32'd3; #20;
+      rd=32'd1; rd_data = -32'd3; #20;
       read_rs1 = 0; read_rs2=0;rd_write = 1;
-      rd=5'd2; rd_data = 32'd3; #20;
+      rd=32'd2; rd_data = 32'd3; #20;
       read_rs1 = 1; read_rs2=1;rd_write = 1;
-      rs1_a=5'd1;rs2_a=5'd2;
-      rd=5'd3; rd_data = 32'd2; #20;
+      rs1_a=32'd1;rs2_a=32'd2;
+      rd=32'd3; rd_data = 32'd2; #20;
       read_rs1 = 1; read_rs2=1;rd_write = 0;
-      rs1_a=5'd1;rs2_a=5'd2; #20
+      rs1_a=32'd1;rs2_a=32'd2; #20
       $stop;
 	end
 	
