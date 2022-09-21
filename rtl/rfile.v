@@ -14,7 +14,8 @@ module rfile(
 );
    reg signed [31:0] reg_file [31:0];
    initial begin
-      reg_file[0] = 0;
+      reg_file[0] <= 0;
+      reg_file[2] <= 32'd3;
    end
    always @ (posedge clk) begin
       if(rd_write && !read_rs1 && !read_rs2 && rd != 5'b0) begin

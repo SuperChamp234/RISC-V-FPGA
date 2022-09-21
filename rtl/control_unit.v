@@ -10,7 +10,8 @@ module control_unit(
     output rs1_read,
     output rs2_read,
     output reg [31:0] next_pc,
-    output reg pc_j_valid
+    output reg pc_j_valid,
+    output reg rd
 );
     assign rs2_read = rs2_valid;
     assign rs1_read = rs1_valid;
@@ -59,6 +60,9 @@ module control_unit(
         else if(instr_bus[34] == 1) begin //jalr
             next_pc <= rs1_value + imm;
             pc_j_valid <= 1;
+        end
+        else if(instr_bus[36] == 1) begin //auipc
+            rd <= pc + (imm << 12);
         end
     end
 
