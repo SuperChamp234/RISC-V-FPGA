@@ -1,0 +1,121 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 312 192)
+	(text "ALU" (rect 5 0 26 12)(font "Arial" ))
+	(text "inst" (rect 8 160 20 172)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rs1[31..0]" (rect 0 0 35 12)(font "Arial" ))
+		(text "rs1[31..0]" (rect 21 43 56 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "rs2[31..0]" (rect 0 0 36 12)(font "Arial" ))
+		(text "rs2[31..0]" (rect 21 59 57 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "imm[31..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "imm[31..0]" (rect 21 75 62 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "instr_bus[36..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "instr_bus[36..0]" (rect 21 91 82 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "pc[31..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "pc[31..0]" (rect 21 107 54 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "read_data_dmem[31..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "read_data_dmem[31..0]" (rect 21 123 116 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 296 32)
+		(output)
+		(text "read_dmem" (rect 0 0 49 12)(font "Arial" ))
+		(text "read_dmem" (rect 226 27 275 39)(font "Arial" ))
+		(line (pt 296 32)(pt 280 32)(line_width 1))
+	)
+	(port
+		(pt 296 48)
+		(output)
+		(text "write_dmem" (rect 0 0 49 12)(font "Arial" ))
+		(text "write_dmem" (rect 226 43 275 55)(font "Arial" ))
+		(line (pt 296 48)(pt 280 48)(line_width 1))
+	)
+	(port
+		(pt 296 64)
+		(output)
+		(text "addr_dmem[31..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "addr_dmem[31..0]" (rect 202 59 275 71)(font "Arial" ))
+		(line (pt 296 64)(pt 280 64)(line_width 3))
+	)
+	(port
+		(pt 296 80)
+		(output)
+		(text "write_data_dmem[31..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "write_data_dmem[31..0]" (rect 180 75 275 87)(font "Arial" ))
+		(line (pt 296 80)(pt 280 80)(line_width 3))
+	)
+	(port
+		(pt 296 96)
+		(output)
+		(text "ALUoutput[31..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "ALUoutput[31..0]" (rect 207 91 275 103)(font "Arial" ))
+		(line (pt 296 96)(pt 280 96)(line_width 3))
+	)
+	(port
+		(pt 296 112)
+		(output)
+		(text "ALUready" (rect 0 0 44 12)(font "Arial" ))
+		(text "ALUready" (rect 231 107 275 119)(font "Arial" ))
+		(line (pt 296 112)(pt 280 112)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 280 160)(line_width 1))
+	)
+)

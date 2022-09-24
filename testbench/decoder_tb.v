@@ -15,7 +15,7 @@ module decoder_tb;
    wire func3_valid;
    wire func7_valid;
    wire imm_valid;
-   wire [37:0] instr_bus;
+   wire [36:0] instr_bus;
    
    decoder dc1(.clk(clk), .instr(instr), .rs2(rs2), .rs1(rs1), .imm(imm), .rd(rd), .func3(func3), .func7(func7), .rd_valid(rd_valid), .rs1_valid(rs1_valid), .rs2_valid(rs2_valid), .func3_valid(func3_valid), .imm_valid(imm_valid), .instr_bus(instr_bus));
    

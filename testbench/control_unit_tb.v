@@ -9,7 +9,7 @@ module control_unit_tb;
     reg signed [31:0] rs1_value;
     reg signed [31:0] rs2_value;
     reg signed [31:0] imm;
-    reg [37:0] instr_bus;
+    reg [36:0] instr_bus;
     reg rs1_valid; reg rs2_valid;
 
     control_unit cu1(.clk(clk), 

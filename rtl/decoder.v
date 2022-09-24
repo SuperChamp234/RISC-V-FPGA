@@ -13,7 +13,7 @@ module decoder(
    output func3_valid,
    output func7_valid,
    output imm_valid,
-   output [37:0] instr_bus
+   output [36:0] instr_bus
 );
      reg is_r_instr, is_u_instr, is_i_instr, is_s_instr, is_b_instr, is_j_instr, is_i1_instr, is_i2_instr;
      reg [6:0] opcode;
