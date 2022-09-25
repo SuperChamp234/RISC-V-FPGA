@@ -11,7 +11,7 @@ initial reset = 0;
 always #10 clk = ~clk;
 
 initial begin
-    #400;
+    #10;
     $stop;
 end
 

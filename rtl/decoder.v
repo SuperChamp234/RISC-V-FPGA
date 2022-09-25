@@ -19,7 +19,7 @@ module decoder(
      reg [6:0] opcode;
      reg [7:0] i; 
      
-   always @ (posedge clk) begin
+   always @ (instr) begin
       
       //determine the type of instruction
       is_r_instr <= instr[6:0] == 7'b0110011;

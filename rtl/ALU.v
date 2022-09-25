@@ -16,7 +16,6 @@ output reg ALUready
 
 always@(posedge clk) begin
     ALUready <= 0;
-    ALUoutput <= 32'b0;
     write_data_dmem <= 32'b0;
     addr_dmem <= 32'b0;
     read_dmem <=0;

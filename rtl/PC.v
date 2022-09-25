@@ -9,7 +9,7 @@ module PC(
   reg [31:0] cyc_4;
   
   initial begin
-   next_pc_reg <= 1;
+   next_pc_reg <= 0;
    cyc_4 <= 0;
   end
   always @ (posedge clk) begin
@@ -17,7 +17,7 @@ module PC(
       next_pc_reg <= 31'd0;
     else if(j_signal)
       next_pc_reg <= j_signal;
-    else if(cyc_4 == 32'd4) begin
+    else if(cyc_4 == 32'd3) begin
       next_pc_reg <= next_pc_reg + 1;
       cyc_4 <= 0;
     end

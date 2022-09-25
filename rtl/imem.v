@@ -11,11 +11,11 @@ module imem(
    reg [7:0] i;
    
    initial begin
-      ins_mem[1] = 32'h00108093;
-      ins_mem[2] = 32'h00110113;
-      ins_mem[3] = 32'h00208133;
-      ins_mem[4] = 32'h002080b3;
-      ins_mem[5] = 32'hffdff1ef;
+      ins_mem[0] = 32'h00108093;
+      ins_mem[1] = 32'h00110113;
+      ins_mem[2] = 32'h00208133;
+      ins_mem[3] = 32'h002080b3;
+      ins_mem[4] = 32'hffdff1ef;
    end
    
    always @ (posedge clk or posedge reset) begin
@@ -28,10 +28,10 @@ module imem(
             ins_mem[address[4:0]] <= data_in;
             data_out_reg <= 0;
          end
-         else if(rw) begin
-            data_out_reg <= ins_mem[address[4:0]];
-         end
+//         else if(rw) begin
+//            data_out_reg <= ins_mem[address[4:0]];
+//         end
       end
    end
-   assign data_out = data_out_reg;
+   assign data_out = rw ? ins_mem[address[4:0]] : 0;
 endmodule

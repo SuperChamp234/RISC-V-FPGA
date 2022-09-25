@@ -20,12 +20,14 @@ module control_unit(
     assign rs2_read = rs2_valid;
     assign rs1_read = rs1_valid;
     
+    initial rd_write <= 0;
+    
     always @ (posedge clk) begin
-      rd_write <= 0;
-       if(rd_valid == 1) begin
+       if((rd_valid == 1) && (ALUready == 1)) begin
                rd_write <= 1;
                rd_data <= ALUoutput;
-           end
+       end
+       else rd_write <=0;
     end
     
     always @ (posedge clk) begin
