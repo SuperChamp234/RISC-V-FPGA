@@ -13,14 +13,15 @@ module decoder(
    output func3_valid,
    output func7_valid,
    output imm_valid,
-   output [36:0] instr_bus
+   output [36:0] instr_bus,
+   output reg [6:0] opcode
 );
      reg is_r_instr, is_u_instr, is_i_instr, is_s_instr, is_b_instr, is_j_instr, is_i1_instr, is_i2_instr;
-     reg [6:0] opcode;
      reg [7:0] i; 
      
    always @ (instr) begin
       
+      opcode <= instr[6:0];
       //determine the type of instruction
       is_r_instr <= instr[6:0] == 7'b0110011;
       is_i_instr <= (instr[6:0] == 7'b0010011) || (instr[6: 0] == 7'b1100111) || (instr[6:0] == 7'b0000011);

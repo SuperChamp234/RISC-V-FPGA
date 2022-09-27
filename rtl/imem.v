@@ -11,11 +11,12 @@ module imem(
    reg [7:0] i;
    
    initial begin
-      ins_mem[0] = 32'h00108093;
-      ins_mem[1] = 32'h00110113;
-      ins_mem[2] = 32'h00208133;
-      ins_mem[3] = 32'h002080b3;
-      ins_mem[4] = 32'hffdff1ef;
+      ins_mem[0] = 32'h0;
+      ins_mem[1] = 32'h00108093;//addi x1, x1, 1
+      ins_mem[2] = 32'h00110113;//addi x2, x2, 1
+      ins_mem[3] = 32'h00208133;//add x2, x1, x2
+      ins_mem[4] = 32'h002080b3;//add x1, x1, x2
+      ins_mem[5] = 32'hffdff1ef;//jal x3, -4
    end
    
    always @ (posedge clk or posedge reset) begin

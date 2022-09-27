@@ -34,7 +34,7 @@ module decoder_ext(
                 is_s_instr ? {{21{instr[31]}}, instr[30:25], instr[11:7]} :
                 is_b_instr ? { {20{instr[31]}}, instr[7], instr[30:25], instr[11:8], 1'b0} :
                 is_u_instr ? { instr[31:12], 12'b0 } :
-                is_j_instr ? { { { { { {12{instr[31]}} , instr[19:12] } , instr[20] } , instr[30:25] } , instr[24:21] }, 1'b0} :
+                is_j_instr ? { { { { {13{instr[31]}} , instr[19:12] } , instr[20] } , instr[30:25] } , instr[24:21] } :
                 32'b0;
    
    assign temp_imm = {imm[5],imm[6], imm[7], imm[8], imm[9], imm[10], imm[11]};
