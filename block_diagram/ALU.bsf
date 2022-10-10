@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2022  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -69,16 +69,16 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 128)
 		(input)
-		(text "ALUenable" (rect 0 0 46 12)(font "Arial" ))
-		(text "ALUenable" (rect 21 123 67 135)(font "Arial" ))
-		(line (pt 0 128)(pt 16 128)(line_width 1))
+		(text "read_data_dmem[31..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "read_data_dmem[31..0]" (rect 21 123 116 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
 	)
 	(port
 		(pt 0 144)
 		(input)
-		(text "read_data_dmem[31..0]" (rect 0 0 95 12)(font "Arial" ))
-		(text "read_data_dmem[31..0]" (rect 21 139 116 151)(font "Arial" ))
-		(line (pt 0 144)(pt 16 144)(line_width 3))
+		(text "ALUenable" (rect 0 0 46 12)(font "Arial" ))
+		(text "ALUenable" (rect 21 139 67 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
 	)
 	(port
 		(pt 296 32)

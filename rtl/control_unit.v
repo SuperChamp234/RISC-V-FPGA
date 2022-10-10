@@ -18,7 +18,11 @@ module control_unit(
     output reg [31:0] rd_data,
     output reg rd_write,
     output reg ALUenable,
-    output reg [36:0] ALU_instr_bus
+    output reg [36:0] ALU_instr_bus,
+	 output reg [31:0] display_out,
+	 input [2:0] func3,
+	 input [6:0] func7,
+	 input imm_valid
 );
 
    reg [1:0] state;
@@ -111,6 +115,12 @@ module control_unit(
                         ALU_instr_bus <= 37'b0;
                     end
                 end
+					 case(opcode)
+                    //R         I           I           I           U           U           S
+                    7'b0110011, 7'b0010011, 7'b0000011, 7'b1100111, 7'b0010111, 7'b0110111, 7'b0100011: begin
+                        display_out <= ALUoutput;
+                    end
+					 endcase
             end
             2'b11: begin
                 next_pc <= 0;

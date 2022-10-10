@@ -5,14 +5,14 @@ input [31:0] rs2,
 input [31:0] imm,
 input [36:0] instr_bus,
 input [31:0] pc,
-input ALUenable,
 output reg read_dmem,
 output reg write_dmem,
 output reg [31:0] addr_dmem,
 output reg [31:0] write_data_dmem,
 input [31:0] read_data_dmem,
 output reg [31:0] ALUoutput,
-output reg ALUready
+output reg ALUready,
+input ALUenable
 );
 
 always@(posedge clk) begin
@@ -185,7 +185,6 @@ always@(posedge clk) begin
     end
     else begin
         ALUready <=0;
-        ALUoutput<=32'b0;
     end
 end
 
