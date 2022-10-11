@@ -9,8 +9,7 @@ module rfile(
    input read_rs1,
    input read_rs2,
    output signed [31:0] rs1,
-   output signed [31:0] rs2,
-   output reg write_done
+   output signed [31:0] rs2
    
 );
    reg signed [31:0] reg_file [31:0];

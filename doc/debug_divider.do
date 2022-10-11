@@ -49,8 +49,10 @@ add wave -noupdate /RISC_V_tb/RV1_m/RV1/D4BB3
 add wave -noupdate /RISC_V_tb/RV1_m/RV1/D4BB4
 add wave -noupdate /RISC_V_tb/RV1_m/RV1/D4BB5
 add wave -noupdate /RISC_V_tb/RV1_m/RV1/D4BB6
+add wave -noupdate /RISC_V_tb/RV1_m/RV1/b2v_pc1/cyc_4
+add wave -noupdate -radix decimal /RISC_V_tb/RV1_m/counter_value
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {400182831602 ps} 0}
+WaveRestoreCursors {{Cursor 1} {338354 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 322
 configure wave -valuecolwidth 100
@@ -66,4 +68,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits sec
 update
-WaveRestoreZoom {0 ps} {424361572352 ps}
+WaveRestoreZoom {207766 ps} {410118 ps}

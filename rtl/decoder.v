@@ -10,14 +10,15 @@ module decoder(
    output rd_valid,
    output rs1_valid,
    output rs2_valid,
-   output func3_valid,
-   output func7_valid,
+   
    output imm_valid,
    output [36:0] instr_bus,
    output reg [6:0] opcode
 );
      reg is_r_instr, is_u_instr, is_i_instr, is_s_instr, is_b_instr, is_j_instr, is_i1_instr, is_i2_instr;
      reg [7:0] i; 
+	  wire func3_valid;
+     wire func7_valid;
      
    always @ (instr) begin
       

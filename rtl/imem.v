@@ -11,6 +11,9 @@ module imem(
    reg [7:0] i;
    
    initial begin
+      for(i = 0;i<32;i=i+1)
+			ins_mem[i] = 32'b0;
+
       ins_mem[0] = 32'h0;
       ins_mem[1] = 32'h00108093;//addi x1, x1, 1
       ins_mem[2] = 32'h00110113;//addi x2, x2, 1

@@ -25,11 +25,9 @@ module control_unit(
 	 input imm_valid
 );
 
-   reg [1:0] state;
+   reg [1:0] state = 2'b11;
    reg [31:0] next_pc_hold;
    reg [31:0] pc_j_valid_hold;
-   
-   initial state <= 2'b0;
     
     always @ (posedge clk) begin
     pc_j_valid <= 0;
@@ -40,8 +38,8 @@ module control_unit(
         case(state)
             2'b00, 2'b01:
                 case(opcode)
-                    //R         I           I           I           U           U           S
-                    7'b0110011, 7'b0010011, 7'b0000011, 7'b1100111, 7'b0010111, 7'b0110111, 7'b0100011: begin
+                    //R         I           I           U           U           S
+                    7'b0110011, 7'b0010011, 7'b0000011, 7'b0010111, 7'b0110111, 7'b0100011: begin
                         ALUenable <= 1; ALU_instr_bus <= instr_bus;
                     end
                     //B                      

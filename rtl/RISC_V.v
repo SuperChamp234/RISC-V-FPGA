@@ -15,12 +15,12 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
-// CREATED		"Sun Oct  9 23:24:31 2022"
+// CREATED		"Tue Oct 11 23:10:13 2022"
 
 module RISC_V(
-	clk,
 	reset,
 	rw,
+	clk,
 	D1BB0,
 	D1BB1,
 	D1BB2,
@@ -52,9 +52,9 @@ module RISC_V(
 );
 
 
-input wire	clk;
 input wire	reset;
 input wire	rw;
+input wire	clk;
 output wire	D1BB0;
 output wire	D1BB1;
 output wire	D1BB2;
@@ -171,8 +171,6 @@ decoder	b2v_dec1(
 	.rd_valid(SYNTHESIZED_WIRE_10),
 	.rs1_valid(SYNTHESIZED_WIRE_7),
 	.rs2_valid(SYNTHESIZED_WIRE_8),
-	
-	
 	.imm_valid(SYNTHESIZED_WIRE_11),
 	.func3(SYNTHESIZED_WIRE_13),
 	.func7(SYNTHESIZED_WIRE_14),
@@ -252,7 +250,6 @@ rfile	b2v_rfile1(
 	.rd_data(SYNTHESIZED_WIRE_35),
 	.rs1_addr(SYNTHESIZED_WIRE_36),
 	.rs2_addr(SYNTHESIZED_WIRE_37),
-	
 	.rs1(SYNTHESIZED_WIRE_40),
 	.rs2(SYNTHESIZED_WIRE_41));
 

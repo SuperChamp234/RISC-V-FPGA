@@ -39,7 +39,7 @@ wire D4BB5;
 wire D4BB6;
 
 
-RISC_V RV1(.clk(clk), .reset(reset), .rw(rw),
+RISC_V_main RV1_m(.clk(clk), .reset(reset), .rw(rw),
 				.D1BB0(D1BB0),
 				.D1BB1(D1BB1),
 				.D1BB2(D1BB2),
