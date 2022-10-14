@@ -1,0 +1,233 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 216 512)
+	(text "sev_seg_disp" (rect 5 0 61 12)(font "Arial" ))
+	(text "inst" (rect 8 480 20 492)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "ALUoutput[31..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "ALUoutput[31..0]" (rect 21 27 89 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "D1BB0" (rect 0 0 27 12)(font "Arial" ))
+		(text "D1BB0" (rect 152 27 179 39)(font "Arial" ))
+		(line (pt 200 32)(pt 184 32)(line_width 1))
+	)
+	(port
+		(pt 200 48)
+		(output)
+		(text "D1BB1" (rect 0 0 25 12)(font "Arial" ))
+		(text "D1BB1" (rect 154 43 179 55)(font "Arial" ))
+		(line (pt 200 48)(pt 184 48)(line_width 1))
+	)
+	(port
+		(pt 200 64)
+		(output)
+		(text "D1BB2" (rect 0 0 27 12)(font "Arial" ))
+		(text "D1BB2" (rect 152 59 179 71)(font "Arial" ))
+		(line (pt 200 64)(pt 184 64)(line_width 1))
+	)
+	(port
+		(pt 200 80)
+		(output)
+		(text "D1BB3" (rect 0 0 27 12)(font "Arial" ))
+		(text "D1BB3" (rect 152 75 179 87)(font "Arial" ))
+		(line (pt 200 80)(pt 184 80)(line_width 1))
+	)
+	(port
+		(pt 200 96)
+		(output)
+		(text "D1BB4" (rect 0 0 28 12)(font "Arial" ))
+		(text "D1BB4" (rect 151 91 179 103)(font "Arial" ))
+		(line (pt 200 96)(pt 184 96)(line_width 1))
+	)
+	(port
+		(pt 200 112)
+		(output)
+		(text "D1BB5" (rect 0 0 27 12)(font "Arial" ))
+		(text "D1BB5" (rect 152 107 179 119)(font "Arial" ))
+		(line (pt 200 112)(pt 184 112)(line_width 1))
+	)
+	(port
+		(pt 200 128)
+		(output)
+		(text "D1BB6" (rect 0 0 27 12)(font "Arial" ))
+		(text "D1BB6" (rect 152 123 179 135)(font "Arial" ))
+		(line (pt 200 128)(pt 184 128)(line_width 1))
+	)
+	(port
+		(pt 200 144)
+		(output)
+		(text "D2BB0" (rect 0 0 28 12)(font "Arial" ))
+		(text "D2BB0" (rect 151 139 179 151)(font "Arial" ))
+		(line (pt 200 144)(pt 184 144)(line_width 1))
+	)
+	(port
+		(pt 200 160)
+		(output)
+		(text "D2BB1" (rect 0 0 27 12)(font "Arial" ))
+		(text "D2BB1" (rect 152 155 179 167)(font "Arial" ))
+		(line (pt 200 160)(pt 184 160)(line_width 1))
+	)
+	(port
+		(pt 200 176)
+		(output)
+		(text "D2BB2" (rect 0 0 28 12)(font "Arial" ))
+		(text "D2BB2" (rect 151 171 179 183)(font "Arial" ))
+		(line (pt 200 176)(pt 184 176)(line_width 1))
+	)
+	(port
+		(pt 200 192)
+		(output)
+		(text "D2BB3" (rect 0 0 28 12)(font "Arial" ))
+		(text "D2BB3" (rect 151 187 179 199)(font "Arial" ))
+		(line (pt 200 192)(pt 184 192)(line_width 1))
+	)
+	(port
+		(pt 200 208)
+		(output)
+		(text "D2BB4" (rect 0 0 29 12)(font "Arial" ))
+		(text "D2BB4" (rect 150 203 179 215)(font "Arial" ))
+		(line (pt 200 208)(pt 184 208)(line_width 1))
+	)
+	(port
+		(pt 200 224)
+		(output)
+		(text "D2BB5" (rect 0 0 28 12)(font "Arial" ))
+		(text "D2BB5" (rect 151 219 179 231)(font "Arial" ))
+		(line (pt 200 224)(pt 184 224)(line_width 1))
+	)
+	(port
+		(pt 200 240)
+		(output)
+		(text "D2BB6" (rect 0 0 28 12)(font "Arial" ))
+		(text "D2BB6" (rect 151 235 179 247)(font "Arial" ))
+		(line (pt 200 240)(pt 184 240)(line_width 1))
+	)
+	(port
+		(pt 200 256)
+		(output)
+		(text "D3BB0" (rect 0 0 28 12)(font "Arial" ))
+		(text "D3BB0" (rect 151 251 179 263)(font "Arial" ))
+		(line (pt 200 256)(pt 184 256)(line_width 1))
+	)
+	(port
+		(pt 200 272)
+		(output)
+		(text "D3BB1" (rect 0 0 27 12)(font "Arial" ))
+		(text "D3BB1" (rect 152 267 179 279)(font "Arial" ))
+		(line (pt 200 272)(pt 184 272)(line_width 1))
+	)
+	(port
+		(pt 200 288)
+		(output)
+		(text "D3BB2" (rect 0 0 28 12)(font "Arial" ))
+		(text "D3BB2" (rect 151 283 179 295)(font "Arial" ))
+		(line (pt 200 288)(pt 184 288)(line_width 1))
+	)
+	(port
+		(pt 200 304)
+		(output)
+		(text "D3BB3" (rect 0 0 28 12)(font "Arial" ))
+		(text "D3BB3" (rect 151 299 179 311)(font "Arial" ))
+		(line (pt 200 304)(pt 184 304)(line_width 1))
+	)
+	(port
+		(pt 200 320)
+		(output)
+		(text "D3BB4" (rect 0 0 29 12)(font "Arial" ))
+		(text "D3BB4" (rect 150 315 179 327)(font "Arial" ))
+		(line (pt 200 320)(pt 184 320)(line_width 1))
+	)
+	(port
+		(pt 200 336)
+		(output)
+		(text "D3BB5" (rect 0 0 28 12)(font "Arial" ))
+		(text "D3BB5" (rect 151 331 179 343)(font "Arial" ))
+		(line (pt 200 336)(pt 184 336)(line_width 1))
+	)
+	(port
+		(pt 200 352)
+		(output)
+		(text "D3BB6" (rect 0 0 28 12)(font "Arial" ))
+		(text "D3BB6" (rect 151 347 179 359)(font "Arial" ))
+		(line (pt 200 352)(pt 184 352)(line_width 1))
+	)
+	(port
+		(pt 200 368)
+		(output)
+		(text "D4BB0" (rect 0 0 29 12)(font "Arial" ))
+		(text "D4BB0" (rect 150 363 179 375)(font "Arial" ))
+		(line (pt 200 368)(pt 184 368)(line_width 1))
+	)
+	(port
+		(pt 200 384)
+		(output)
+		(text "D4BB1" (rect 0 0 28 12)(font "Arial" ))
+		(text "D4BB1" (rect 151 379 179 391)(font "Arial" ))
+		(line (pt 200 384)(pt 184 384)(line_width 1))
+	)
+	(port
+		(pt 200 400)
+		(output)
+		(text "D4BB2" (rect 0 0 29 12)(font "Arial" ))
+		(text "D4BB2" (rect 150 395 179 407)(font "Arial" ))
+		(line (pt 200 400)(pt 184 400)(line_width 1))
+	)
+	(port
+		(pt 200 416)
+		(output)
+		(text "D4BB3" (rect 0 0 29 12)(font "Arial" ))
+		(text "D4BB3" (rect 150 411 179 423)(font "Arial" ))
+		(line (pt 200 416)(pt 184 416)(line_width 1))
+	)
+	(port
+		(pt 200 432)
+		(output)
+		(text "D4BB4" (rect 0 0 30 12)(font "Arial" ))
+		(text "D4BB4" (rect 149 427 179 439)(font "Arial" ))
+		(line (pt 200 432)(pt 184 432)(line_width 1))
+	)
+	(port
+		(pt 200 448)
+		(output)
+		(text "D4BB5" (rect 0 0 29 12)(font "Arial" ))
+		(text "D4BB5" (rect 150 443 179 455)(font "Arial" ))
+		(line (pt 200 448)(pt 184 448)(line_width 1))
+	)
+	(port
+		(pt 200 464)
+		(output)
+		(text "D4BB6" (rect 0 0 29 12)(font "Arial" ))
+		(text "D4BB6" (rect 150 459 179 471)(font "Arial" ))
+		(line (pt 200 464)(pt 184 464)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 480)(line_width 1))
+	)
+)

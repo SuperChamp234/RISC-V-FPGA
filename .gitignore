@@ -1,0 +1,10 @@
+db/
+RISC_V.qpf
+RISC_V.qsf
+*.v.bak
+c5_pin_model_dump.txt
+RISC_V_nativelink_simulation.rpt
+RISC_V.qws
+simulation/
+output_files/
+incremental_db/
