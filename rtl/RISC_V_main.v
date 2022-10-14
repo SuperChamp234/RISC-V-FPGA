@@ -2,38 +2,14 @@ module RISC_V_main(
 	input clk,
 	input rw,
 	input reset,
-	output D1BB0,
-	output D1BB1,
-	output D1BB2,
-	output D1BB3,
-	output D1BB4,
-	output D1BB5,
-	output D1BB6,
-	output D2BB0,
-	output D2BB1,
-	output D2BB2,
-	output D2BB3,
-	output D2BB4,
-	output D2BB5,
-	output D2BB6,
-	output D3BB0,
-	output D3BB1,
-	output D3BB2,
-	output D3BB3,
-	output D3BB4,
-	output D3BB5,
-	output D3BB6,
-	output D4BB0,
-	output D4BB1,
-	output D4BB2,
-	output D4BB3,
-	output D4BB4,
-	output D4BB5,
-	output D4BB6
+	output [6:0] D1,
+	output [6:0] D2,
+	output [6:0] D3,
+	output [6:0] D4
 );
 
 reg divided_clk;
-reg[32:0] counter_value;
+reg [32:0] counter_value;
 parameter div_value = 32'd10000000;	
 
 //parameter div_value = 32'd2; debug purposes(software)
@@ -53,37 +29,10 @@ end
     end
 
 RISC_V RV1(.clk(divided_clk), .reset(reset), .rw(rw),
-				.D1BB0(D1BB0),
-				.D1BB1(D1BB1),
-				.D1BB2(D1BB2),
-				.D1BB3(D1BB3),
-				.D1BB4(D1BB4),
-				.D1BB5(D1BB5),
-				.D1BB6(D1BB6),
-
-				.D2BB0(D2BB0),
-				.D2BB1(D2BB1),
-				.D2BB2(D2BB2),
-				.D2BB3(D2BB3),
-				.D2BB4(D2BB4),
-				.D2BB5(D2BB5),
-				.D2BB6(D2BB6),
-
-				.D3BB0(D3BB0),
-				.D3BB1(D3BB1),
-				.D3BB2(D3BB2),
-				.D3BB3(D3BB3),
-				.D3BB4(D3BB4),
-				.D3BB5(D3BB5),
-				.D3BB6(D3BB6),
-
-				.D4BB0(D4BB0),
-				.D4BB1(D4BB1),
-				.D4BB2(D4BB2),
-				.D4BB3(D4BB3),
-				.D4BB4(D4BB4),
-				.D4BB5(D4BB5),
-				.D4BB6(D4BB6)
+				.D1(D1),
+				.D2(D2),
+				.D3(D3),
+				.D4(D4)
 			 
 				);
 endmodule
