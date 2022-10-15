@@ -1,0 +1,191 @@
+[33mcommit 838f9da45e088f3448ecf26d79d5bd1ae7684c86[m[33m ([m[1;36mHEAD -> [m[1;32mzain-dev[m[33m)[m
+Author: Zain Siddavatam <beingzainsv@gmail.com>
+Date:   Fri Oct 14 17:13:57 2022 +0530
+
+    Removed Unnecessary files
+
+[33mcommit 76bd0ddb9f1aeff6820512c3b18b66753fe6ce75[m
+Author: Zain Siddavatam <beingzainsv@gmail.com>
+Date:   Fri Oct 14 17:06:13 2022 +0530
+
+    Removed Sim folder
+
+[33mcommit a783a568b2f308c6932e8491244348499649ff6f[m
+Author: Zain Siddavatam <beingzainsv@gmail.com>
+Date:   Fri Oct 14 15:50:34 2022 +0530
+
+    Two Seven Segment Modules Implemented
+
+[33mcommit f5d59c0af6eea00759df8c50342789a30e9934af[m[33m ([m[1;31morigin/zain-dev[m[33m)[m
+Author: Zain Siddavatam <beingzainsv@gmail.com>
+Date:   Wed Oct 12 00:56:36 2022 +0530
+
+    Implemented Clock Divider
+
+[33mcommit 7706694acb43ace7262742f38d9a3de435004d35[m
+Author: Zain Siddavatam <beingzainsv@gmail.com>
+Date:   Tue Oct 11 23:26:16 2022 +0530
+
+    Updated readme
+
+[33mcommit e9fc87af96f76eb433dc23c56bf1fb8635e8e01e[m
+Author: Zain Siddavatam <beingzainsv@gmail.com>
+Date:   Mon Oct 10 14:14:43 2022 +0530
+
+    Added Seven Segment Display to complete CPU
+
+[33mcommit 47958f2d826efedcaadaf4520f65b8b2e034cc8f[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Sun Oct 9 18:42:53 2022 +0530
+
+    added debug script
+
+[33mcommit 5e475f6f86dfed42b558fb679317b75efbac4b3e[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Tue Sep 27 22:29:46 2022 +0530
+
+    Working CPU implemented, fibonacci program Working.
+
+[33mcommit babde6d9bf65c3c3598bb554fdb7f925979c22e0[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Sun Sep 25 12:59:20 2022 +0530
+
+    Further bug fixes
+
+[33mcommit 3c9ec5369a7394e888f462e54f6221dece879d7c[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Sat Sep 24 12:21:47 2022 +0530
+
+    Made Connections and Loaded Fibonacci Program(buggy)
+
+[33mcommit fd4c262bb49009572dd0a823ee119165ef264d68[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Wed Sep 21 19:43:25 2022 +0530
+
+    Connected components in preliminary testing
+
+[33mcommit 830e042691f197c537055d102ad5350553a08295[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Wed Sep 21 19:43:00 2022 +0530
+
+    Implemented Seven Segment Display
+
+[33mcommit 94ff5c92a911e0d11a977c1bed77c1764afc2df4[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Mon Sep 19 00:59:59 2022 +0530
+
+    Reworked BCD Algorithm
+
+[33mcommit a44176eb1a9897545d738bbd8c60058d93e15b77[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Sun Sep 18 22:04:07 2022 +0530
+
+    Implemented Binary to BCD
+
+[33mcommit 58226fc147c77573147add2c8af9e63b1ab3aa04[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Sat Sep 17 01:26:18 2022 +0530
+
+    scuffed implementation of bin to bcd
+
+[33mcommit b14927d6ba0ba04f22c9d4b19dc4a3b5c8993c58[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Wed Sep 14 18:16:01 2022 +0530
+
+    rectified address sizes
+
+[33mcommit 917f6fe64201005934832774a792073b25a82085[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Tue Sep 13 18:18:13 2022 +0530
+
+    Multiple Design Changes to rfile, dmem and decoder. CU Added
+
+[33mcommit a5d569ffd503aaf5defcd6e48d156985078abada[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Mon Sep 12 15:55:03 2022 +0530
+
+    Dynamic Memory Implemented
+
+[33mcommit 63e4c0c8d96e573142081a958e6fd879762fe5df[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Sat Sep 10 02:24:55 2022 +0530
+
+    Register File Implemented
+
+[33mcommit 51ccf3868ce4bc8e687fef2e34ed037cda405ee3[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Fri Sep 9 00:19:52 2022 +0530
+
+    Refractored Decoder into two modules
+
+[33mcommit 6e75b43a2fba130d872981ccc9bec0b475d3fb01[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Fri Sep 9 00:13:15 2022 +0530
+
+    Refractored Decoder into two modules
+
+[33mcommit 1779ede6d895a372eb6b166de1ba81d8a57bdf12[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Thu Sep 8 19:21:17 2022 +0530
+
+    Decoder partially working
+
+[33mcommit bba9c89fcc04aa97794258408523e9cd4c923e07[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Thu Sep 8 19:06:49 2022 +0530
+
+    Another Implementation for Decoder Syntax
+
+[33mcommit 2e98b5bfea9e343c57617bbf31d0953363f0c724[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Thu Sep 8 17:39:08 2022 +0530
+
+    Added PC and Decoder(buggy)
+
+[33mcommit 9f6c59548ec891a403d3cc82566304ea16ffc83a[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Tue Sep 6 03:37:52 2022 +0530
+
+    Decoder Coded, Tests Remain
+
+[33mcommit 7a97134731c5117c5bb482cd56f401244a4fede6[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Sat Sep 3 01:50:55 2022 +0530
+
+    Finished with first part of Decoder
+
+[33mcommit 1370b7cb871019266147c9c7caad1add894a8f38[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Thu Sep 1 20:25:49 2022 +0530
+
+    Added reset to imem
+
+[33mcommit a109ef7097fdc2bff6cdafc896d2ae8bb52f6362[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Wed Aug 31 12:18:34 2022 +0530
+
+    Instruction memory fully working
+
+[33mcommit 5d18cab62f52e0dade815425f9a41ed70ad70457[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Wed Aug 31 01:22:06 2022 +0530
+
+    Basic loading of instruction from imem
+
+[33mcommit 7367058bb7e90fe9e8efb28b0c7b63f1f8ad6277[m
+Author: SuperChamp234 <leonardh@tuta.io>
+Date:   Mon Aug 29 23:44:33 2022 +0530
+
+    Started imem development
+
+[33mcommit fcc13f18e87ce99e04f1ba816b99bbe22862067b[m
+Author: Zain <beingzainsv@gmail.com>
+Date:   Mon Aug 29 16:47:29 2022 +0530
+
+    Initialized Branch
+
+[33mcommit 2d7169ce6191db1fba54c3d8389ebf67dead9bf3[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Zain <beingzainsv@gmail.com>
+Date:   Mon Aug 29 16:44:29 2022 +0530
+
+    Initial commit

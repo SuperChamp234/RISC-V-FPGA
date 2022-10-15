@@ -1,0 +1,290 @@
+<session jtag_chain="USB-Blaster [1-3]" jtag_device="@1: EP2C5 (0x020B10DD)" sof_file="">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <multi attribute="frame size" size="2" value="1920,934"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <multi attribute="jtag widget size" size="2" value="445,149"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+  </global_info>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="data horizontal scroll position" value="17"/>
+      <single attribute="zoom level numerator" value="16"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="8184"/>
+      <single attribute="zoom offset denominator" value="1"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2022/10/14 12:45:36  #0">
+      <clock name="clk" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[0]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[10]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[11]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[12]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[13]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[14]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[15]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[16]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[17]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[18]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[19]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[1]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[20]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[21]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[22]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[23]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[24]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[25]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[26]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[27]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[28]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[29]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[2]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[30]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[31]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[3]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[4]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[5]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[6]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[7]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[8]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[9]" tap_mode="classic"/>
+          <wire name="divided_clk" tap_mode="classic"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[0]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[10]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[11]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[12]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[13]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[14]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[15]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[16]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[17]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[18]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[19]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[1]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[20]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[21]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[22]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[23]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[24]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[25]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[26]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[27]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[28]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[29]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[2]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[30]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[31]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[3]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[4]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[5]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[6]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[7]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[8]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[9]" tap_mode="classic"/>
+          <wire name="divided_clk" tap_mode="classic"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[0]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[10]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[11]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[12]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[13]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[14]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[15]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[16]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[17]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[18]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[19]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[1]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[20]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[21]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[22]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[23]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[24]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[25]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[26]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[27]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[28]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[29]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[2]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[30]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[31]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[3]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[4]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[5]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[6]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[7]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[8]" tap_mode="classic"/>
+          <wire name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[9]" tap_mode="classic"/>
+          <wire name="divided_clk" tap_mode="classic"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <unified_setup_data_view>
+          <node name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput" order="msb_to_lsb" type="combinatorial">
+            <node data_index="24" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[31]" storage_index="24" tap_mode="classic" trigger_index="24" type="combinatorial"/>
+            <node data_index="23" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[30]" storage_index="23" tap_mode="classic" trigger_index="23" type="combinatorial"/>
+            <node data_index="21" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[29]" storage_index="21" tap_mode="classic" trigger_index="21" type="combinatorial"/>
+            <node data_index="20" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[28]" storage_index="20" tap_mode="classic" trigger_index="20" type="combinatorial"/>
+            <node data_index="19" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[27]" storage_index="19" tap_mode="classic" trigger_index="19" type="combinatorial"/>
+            <node data_index="18" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[26]" storage_index="18" tap_mode="classic" trigger_index="18" type="combinatorial"/>
+            <node data_index="17" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[25]" storage_index="17" tap_mode="classic" trigger_index="17" type="combinatorial"/>
+            <node data_index="16" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[24]" storage_index="16" tap_mode="classic" trigger_index="16" type="combinatorial"/>
+            <node data_index="15" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[23]" storage_index="15" tap_mode="classic" trigger_index="15" type="combinatorial"/>
+            <node data_index="14" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[22]" storage_index="14" tap_mode="classic" trigger_index="14" type="combinatorial"/>
+            <node data_index="13" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[21]" storage_index="13" tap_mode="classic" trigger_index="13" type="combinatorial"/>
+            <node data_index="12" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[20]" storage_index="12" tap_mode="classic" trigger_index="12" type="combinatorial"/>
+            <node data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[19]" storage_index="10" tap_mode="classic" trigger_index="10" type="combinatorial"/>
+            <node data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[18]" storage_index="9" tap_mode="classic" trigger_index="9" type="combinatorial"/>
+            <node data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[17]" storage_index="8" tap_mode="classic" trigger_index="8" type="combinatorial"/>
+            <node data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[16]" storage_index="7" tap_mode="classic" trigger_index="7" type="combinatorial"/>
+            <node data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[15]" storage_index="6" tap_mode="classic" trigger_index="6" type="combinatorial"/>
+            <node data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[14]" storage_index="5" tap_mode="classic" trigger_index="5" type="combinatorial"/>
+            <node data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[13]" storage_index="4" tap_mode="classic" trigger_index="4" type="combinatorial"/>
+            <node data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[12]" storage_index="3" tap_mode="classic" trigger_index="3" type="combinatorial"/>
+            <node data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[11]" storage_index="2" tap_mode="classic" trigger_index="2" type="combinatorial"/>
+            <node data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[10]" storage_index="1" tap_mode="classic" trigger_index="1" type="combinatorial"/>
+            <node data_index="31" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[9]" storage_index="31" tap_mode="classic" trigger_index="31" type="combinatorial"/>
+            <node data_index="30" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[8]" storage_index="30" tap_mode="classic" trigger_index="30" type="combinatorial"/>
+            <node data_index="29" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[7]" storage_index="29" tap_mode="classic" trigger_index="29" type="combinatorial"/>
+            <node data_index="28" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[6]" storage_index="28" tap_mode="classic" trigger_index="28" type="combinatorial"/>
+            <node data_index="27" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[5]" storage_index="27" tap_mode="classic" trigger_index="27" type="combinatorial"/>
+            <node data_index="26" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[4]" storage_index="26" tap_mode="classic" trigger_index="26" type="combinatorial"/>
+            <node data_index="25" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[3]" storage_index="25" tap_mode="classic" trigger_index="25" type="combinatorial"/>
+            <node data_index="22" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[2]" storage_index="22" tap_mode="classic" trigger_index="22" type="combinatorial"/>
+            <node data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[1]" storage_index="11" tap_mode="classic" trigger_index="11" type="combinatorial"/>
+            <node data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[0]" storage_index="0" tap_mode="classic" trigger_index="0" type="combinatorial"/>
+          </node>
+          <node data_index="32" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="divided_clk" storage_index="32" tap_mode="classic" trigger_index="32" type="register"/>
+        </unified_setup_data_view>
+        <data_view>
+          <bus name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput" order="msb_to_lsb" type="combinatorial">
+            <net data_index="24" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[31]" storage_index="24" tap_mode="classic" trigger_index="24" type="combinatorial"/>
+            <net data_index="23" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[30]" storage_index="23" tap_mode="classic" trigger_index="23" type="combinatorial"/>
+            <net data_index="21" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[29]" storage_index="21" tap_mode="classic" trigger_index="21" type="combinatorial"/>
+            <net data_index="20" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[28]" storage_index="20" tap_mode="classic" trigger_index="20" type="combinatorial"/>
+            <net data_index="19" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[27]" storage_index="19" tap_mode="classic" trigger_index="19" type="combinatorial"/>
+            <net data_index="18" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[26]" storage_index="18" tap_mode="classic" trigger_index="18" type="combinatorial"/>
+            <net data_index="17" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[25]" storage_index="17" tap_mode="classic" trigger_index="17" type="combinatorial"/>
+            <net data_index="16" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[24]" storage_index="16" tap_mode="classic" trigger_index="16" type="combinatorial"/>
+            <net data_index="15" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[23]" storage_index="15" tap_mode="classic" trigger_index="15" type="combinatorial"/>
+            <net data_index="14" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[22]" storage_index="14" tap_mode="classic" trigger_index="14" type="combinatorial"/>
+            <net data_index="13" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[21]" storage_index="13" tap_mode="classic" trigger_index="13" type="combinatorial"/>
+            <net data_index="12" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[20]" storage_index="12" tap_mode="classic" trigger_index="12" type="combinatorial"/>
+            <net data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[19]" storage_index="10" tap_mode="classic" trigger_index="10" type="combinatorial"/>
+            <net data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[18]" storage_index="9" tap_mode="classic" trigger_index="9" type="combinatorial"/>
+            <net data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[17]" storage_index="8" tap_mode="classic" trigger_index="8" type="combinatorial"/>
+            <net data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[16]" storage_index="7" tap_mode="classic" trigger_index="7" type="combinatorial"/>
+            <net data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[15]" storage_index="6" tap_mode="classic" trigger_index="6" type="combinatorial"/>
+            <net data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[14]" storage_index="5" tap_mode="classic" trigger_index="5" type="combinatorial"/>
+            <net data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[13]" storage_index="4" tap_mode="classic" trigger_index="4" type="combinatorial"/>
+            <net data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[12]" storage_index="3" tap_mode="classic" trigger_index="3" type="combinatorial"/>
+            <net data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[11]" storage_index="2" tap_mode="classic" trigger_index="2" type="combinatorial"/>
+            <net data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[10]" storage_index="1" tap_mode="classic" trigger_index="1" type="combinatorial"/>
+            <net data_index="31" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[9]" storage_index="31" tap_mode="classic" trigger_index="31" type="combinatorial"/>
+            <net data_index="30" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[8]" storage_index="30" tap_mode="classic" trigger_index="30" type="combinatorial"/>
+            <net data_index="29" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[7]" storage_index="29" tap_mode="classic" trigger_index="29" type="combinatorial"/>
+            <net data_index="28" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[6]" storage_index="28" tap_mode="classic" trigger_index="28" type="combinatorial"/>
+            <net data_index="27" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[5]" storage_index="27" tap_mode="classic" trigger_index="27" type="combinatorial"/>
+            <net data_index="26" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[4]" storage_index="26" tap_mode="classic" trigger_index="26" type="combinatorial"/>
+            <net data_index="25" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[3]" storage_index="25" tap_mode="classic" trigger_index="25" type="combinatorial"/>
+            <net data_index="22" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[2]" storage_index="22" tap_mode="classic" trigger_index="22" type="combinatorial"/>
+            <net data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[1]" storage_index="11" tap_mode="classic" trigger_index="11" type="combinatorial"/>
+            <net data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[0]" storage_index="0" tap_mode="classic" trigger_index="0" type="combinatorial"/>
+          </bus>
+          <net data_index="32" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="divided_clk" storage_index="32" tap_mode="classic" trigger_index="32" type="register"/>
+        </data_view>
+        <setup_view>
+          <bus name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput" order="msb_to_lsb" type="combinatorial">
+            <net data_index="24" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[31]" storage_index="24" tap_mode="classic" trigger_index="24" type="combinatorial"/>
+            <net data_index="23" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[30]" storage_index="23" tap_mode="classic" trigger_index="23" type="combinatorial"/>
+            <net data_index="21" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[29]" storage_index="21" tap_mode="classic" trigger_index="21" type="combinatorial"/>
+            <net data_index="20" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[28]" storage_index="20" tap_mode="classic" trigger_index="20" type="combinatorial"/>
+            <net data_index="19" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[27]" storage_index="19" tap_mode="classic" trigger_index="19" type="combinatorial"/>
+            <net data_index="18" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[26]" storage_index="18" tap_mode="classic" trigger_index="18" type="combinatorial"/>
+            <net data_index="17" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[25]" storage_index="17" tap_mode="classic" trigger_index="17" type="combinatorial"/>
+            <net data_index="16" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[24]" storage_index="16" tap_mode="classic" trigger_index="16" type="combinatorial"/>
+            <net data_index="15" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[23]" storage_index="15" tap_mode="classic" trigger_index="15" type="combinatorial"/>
+            <net data_index="14" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[22]" storage_index="14" tap_mode="classic" trigger_index="14" type="combinatorial"/>
+            <net data_index="13" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[21]" storage_index="13" tap_mode="classic" trigger_index="13" type="combinatorial"/>
+            <net data_index="12" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[20]" storage_index="12" tap_mode="classic" trigger_index="12" type="combinatorial"/>
+            <net data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[19]" storage_index="10" tap_mode="classic" trigger_index="10" type="combinatorial"/>
+            <net data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[18]" storage_index="9" tap_mode="classic" trigger_index="9" type="combinatorial"/>
+            <net data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[17]" storage_index="8" tap_mode="classic" trigger_index="8" type="combinatorial"/>
+            <net data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[16]" storage_index="7" tap_mode="classic" trigger_index="7" type="combinatorial"/>
+            <net data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[15]" storage_index="6" tap_mode="classic" trigger_index="6" type="combinatorial"/>
+            <net data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[14]" storage_index="5" tap_mode="classic" trigger_index="5" type="combinatorial"/>
+            <net data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[13]" storage_index="4" tap_mode="classic" trigger_index="4" type="combinatorial"/>
+            <net data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[12]" storage_index="3" tap_mode="classic" trigger_index="3" type="combinatorial"/>
+            <net data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[11]" storage_index="2" tap_mode="classic" trigger_index="2" type="combinatorial"/>
+            <net data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[10]" storage_index="1" tap_mode="classic" trigger_index="1" type="combinatorial"/>
+            <net data_index="31" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[9]" storage_index="31" tap_mode="classic" trigger_index="31" type="combinatorial"/>
+            <net data_index="30" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[8]" storage_index="30" tap_mode="classic" trigger_index="30" type="combinatorial"/>
+            <net data_index="29" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[7]" storage_index="29" tap_mode="classic" trigger_index="29" type="combinatorial"/>
+            <net data_index="28" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[6]" storage_index="28" tap_mode="classic" trigger_index="28" type="combinatorial"/>
+            <net data_index="27" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[5]" storage_index="27" tap_mode="classic" trigger_index="27" type="combinatorial"/>
+            <net data_index="26" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[4]" storage_index="26" tap_mode="classic" trigger_index="26" type="combinatorial"/>
+            <net data_index="25" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[3]" storage_index="25" tap_mode="classic" trigger_index="25" type="combinatorial"/>
+            <net data_index="22" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[2]" storage_index="22" tap_mode="classic" trigger_index="22" type="combinatorial"/>
+            <net data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[1]" storage_index="11" tap_mode="classic" trigger_index="11" type="combinatorial"/>
+            <net data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RISC_V:RV1|ALU:b2v_alu1|ALUoutput[0]" storage_index="0" tap_mode="classic" trigger_index="0" type="combinatorial"/>
+          </bus>
+          <net data_index="32" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="divided_clk" storage_index="32" tap_mode="classic" trigger_index="32" type="register"/>
+        </setup_view>
+        <trigger_in_editor/>
+        <trigger_out_editor/>
+      </presentation>
+      <trigger CRC="186E6F8D" attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2022/10/14 12:45:36  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>111111111111111111111111111111111
+            <pwr_up_transitional>111111111111111111111111111111111</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: 2022/10/14 12:54:35  #0" power_up_mode="false" sample_depth="128" trigger_position="16">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</data>
+          <extradata>1111111111111111T111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+</session>

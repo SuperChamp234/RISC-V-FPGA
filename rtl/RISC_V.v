@@ -1,88 +1,39 @@
-// Copyright (C) 2019  Intel Corporation. All rights reserved.
-// Your use of Intel Corporation's design tools, logic functions 
-// and other software and tools, and any partner logic 
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
 // functions, and any output files from any of the foregoing 
 // (including device programming or simulation files), and any 
 // associated documentation or information are expressly subject 
-// to the terms and conditions of the Intel Program License 
-// Subscription Agreement, the Intel Quartus Prime License Agreement,
-// the Intel FPGA IP License Agreement, or other applicable license
-// agreement, including, without limitation, that your use is for
-// the sole purpose of programming logic devices manufactured by
-// Intel and sold by Intel or its authorized distributors.  Please
-// refer to the applicable agreement for further details, at
-// https://fpgasoftware.intel.com/eula.
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
 
-// PROGRAM		"Quartus Prime"
-// VERSION		"Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
-// CREATED		"Tue Oct 11 23:10:13 2022"
+// PROGRAM		"Quartus II 64-Bit"
+// VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+// CREATED		"Fri Oct 14 14:59:13 2022"
 
 module RISC_V(
 	reset,
 	rw,
 	clk,
-	D1BB0,
-	D1BB1,
-	D1BB2,
-	D1BB3,
-	D1BB4,
-	D1BB5,
-	D1BB6,
-	D2BB0,
-	D2BB1,
-	D2BB2,
-	D2BB3,
-	D2BB4,
-	D2BB5,
-	D2BB6,
-	D3BB0,
-	D3BB1,
-	D3BB2,
-	D3BB3,
-	D3BB4,
-	D3BB5,
-	D3BB6,
-	D4BB0,
-	D4BB1,
-	D4BB2,
-	D4BB3,
-	D4BB4,
-	D4BB5,
-	D4BB6
+	D1,
+	D2,
+	D3,
+	D4
 );
 
 
 input wire	reset;
 input wire	rw;
 input wire	clk;
-output wire	D1BB0;
-output wire	D1BB1;
-output wire	D1BB2;
-output wire	D1BB3;
-output wire	D1BB4;
-output wire	D1BB5;
-output wire	D1BB6;
-output wire	D2BB0;
-output wire	D2BB1;
-output wire	D2BB2;
-output wire	D2BB3;
-output wire	D2BB4;
-output wire	D2BB5;
-output wire	D2BB6;
-output wire	D3BB0;
-output wire	D3BB1;
-output wire	D3BB2;
-output wire	D3BB3;
-output wire	D3BB4;
-output wire	D3BB5;
-output wire	D3BB6;
-output wire	D4BB0;
-output wire	D4BB1;
-output wire	D4BB2;
-output wire	D4BB3;
-output wire	D4BB4;
-output wire	D4BB5;
-output wire	D4BB6;
+output wire	[6:0] D1;
+output wire	[6:0] D2;
+output wire	[6:0] D3;
+output wire	[6:0] D4;
 
 wire	SYNTHESIZED_WIRE_0;
 wire	[31:0] SYNTHESIZED_WIRE_38;
@@ -202,34 +153,10 @@ imem	b2v_imem1(
 
 sev_seg_disp	b2v_inst(
 	.ALUoutput(SYNTHESIZED_WIRE_28),
-	.D1BB0(D1BB0),
-	.D1BB1(D1BB1),
-	.D1BB2(D1BB2),
-	.D1BB3(D1BB3),
-	.D1BB4(D1BB4),
-	.D1BB5(D1BB5),
-	.D1BB6(D1BB6),
-	.D2BB0(D2BB0),
-	.D2BB1(D2BB1),
-	.D2BB2(D2BB2),
-	.D2BB3(D2BB3),
-	.D2BB4(D2BB4),
-	.D2BB5(D2BB5),
-	.D2BB6(D2BB6),
-	.D3BB0(D3BB0),
-	.D3BB1(D3BB1),
-	.D3BB2(D3BB2),
-	.D3BB3(D3BB3),
-	.D3BB4(D3BB4),
-	.D3BB5(D3BB5),
-	.D3BB6(D3BB6),
-	.D4BB0(D4BB0),
-	.D4BB1(D4BB1),
-	.D4BB2(D4BB2),
-	.D4BB3(D4BB3),
-	.D4BB4(D4BB4),
-	.D4BB5(D4BB5),
-	.D4BB6(D4BB6));
+	.D1(D1),
+	.D2(D2),
+	.D3(D3),
+	.D4(D4));
 
 
 PC	b2v_pc1(

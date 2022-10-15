@@ -21,13 +21,7 @@ add wave -noupdate /RISC_V_tb/RV1_m/RV1/b2v_cu1/state
 add wave -noupdate /RISC_V_tb/RV1_m/RV1/b2v_cu1/pc_j_valid
 add wave -noupdate -radix decimal /RISC_V_tb/RV1_m/RV1/b2v_cu1/next_pc
 add wave -noupdate /RISC_V_tb/RV1_m/RV1/b2v_inst/BCD
-add wave -noupdate /RISC_V_tb/RV1_m/RV1/D1BB0
-add wave -noupdate /RISC_V_tb/RV1_m/RV1/D1BB1
-add wave -noupdate /RISC_V_tb/RV1_m/RV1/D1BB2
-add wave -noupdate /RISC_V_tb/RV1_m/RV1/D1BB3
-add wave -noupdate /RISC_V_tb/RV1_m/RV1/D1BB4
-add wave -noupdate /RISC_V_tb/RV1_m/RV1/D1BB5
-add wave -noupdate /RISC_V_tb/RV1_m/RV1/D1BB6
+add wave -noupdate /RISC_V_tb/RV1_m/RV1/D1
 add wave -noupdate /RISC_V_tb/RV1_m/RV1/D2BB0
 add wave -noupdate /RISC_V_tb/RV1_m/RV1/D2BB1
 add wave -noupdate /RISC_V_tb/RV1_m/RV1/D2BB2
