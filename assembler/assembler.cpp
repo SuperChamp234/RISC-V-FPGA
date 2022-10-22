@@ -295,6 +295,11 @@ vector<int> decode(string str){
     decoded = rs1(instr, decoded);
     //add rs2 or imm[11:5] or imm[12|10:5] to the vector
     decoded = rs2_imm_func7(instr, decoded);
+    //if the output isn't 32 bits, throw an error
+    if(decoded.size() != 32){
+        cout << "Error: Input is invalid" << endl;
+        exit(1);
+    }
     return decoded;
 }
 
