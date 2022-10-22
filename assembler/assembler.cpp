@@ -142,7 +142,7 @@ vector<int> rd_imm1(vector<string> instr, vector<int> decoded){
     }
     //for I type instructions(addi, xori, ori, andi, slli, srli, srai, slti, sltiu)
     //bits_11_7 is rd
-    else if(instr[0] == "addi" | instr[0] == "xori" | instr[0] == "ori" | instr[0] == "andi" | instr[0] == "slli" | instr[0] == "srli" | instr[0] == "srai" | instr[0] == "slti" | instr[0] == "sltiu" | instr[0] == "lb" | instr[0] == "lh" | instr[0] == "lw" | instr[0] == "lbu" | instr[0] == "lhu"){
+    else if(instr[0] == "jalr" | instr[0] == "addi" | instr[0] == "xori" | instr[0] == "ori" | instr[0] == "andi" | instr[0] == "slli" | instr[0] == "srli" | instr[0] == "srai" | instr[0] == "slti" | instr[0] == "sltiu" | instr[0] == "lb" | instr[0] == "lh" | instr[0] == "lw" | instr[0] == "lbu" | instr[0] == "lhu"){
         bits_11_7 = bitarray(instr[1], 5);
     }
     //for S type instructions(sb,sh,sw)
@@ -223,11 +223,11 @@ vector<int> rs1(vector<string> instr, vector<int> decoded){
     vector<int> b_type   = {1,1,0,0,0,1,1};
     vector<int> i_type_3 = {1,1,0,0,1,1,1};
     vector<int> i_type_4 = {1,1,1,0,0,1,1};
-    if(opcode == r_type | opcode == i_type_1 | opcode == i_type_2 | opcode == i_type_3 | opcode == i_type_4 | opcode == b_type){
+    if(opcode == r_type | opcode == i_type_1 | opcode == i_type_4 | opcode == b_type){
         vector<int> rs1 = bitarray(instr[2], 5);
         decoded.insert(decoded.begin(), rs1.begin(), rs1.end());
     }
-    if(opcode == s_type){
+    if(opcode == s_type | opcode == i_type_2 | opcode == i_type_3){
         vector<int> rs1 = bitarray(instr[3], 5);
         decoded.insert(decoded.begin(), rs1.begin(), rs1.end());
     }
@@ -242,8 +242,12 @@ vector<int> rs2_imm_func7(vector<string> instr, vector<int> decoded){
     vector<int> b_type   = {1,1,0,0,0,1,1};
     vector<int> i_type_3 = {1,1,0,0,1,1,1};
     vector<int> i_type_4 = {1,1,1,0,0,1,1};
-    if(opcode == i_type_1 | opcode == i_type_2 | opcode == i_type_3 | opcode == i_type_4){
+    if(opcode == i_type_1| opcode == i_type_4){
         vector<int> imm = bitarray(instr[3], 12);
+        decoded.insert(decoded.begin(), imm.begin(), imm.end());
+    }
+    if(opcode == i_type_2 | opcode == i_type_3 ) {
+        vector<int> imm = bitarray(instr[2], 12);
         decoded.insert(decoded.begin(), imm.begin(), imm.end());
     }
     if(opcode == r_type | opcode == b_type){
