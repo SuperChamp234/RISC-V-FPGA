@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-
+#include <fstream>
 
 using namespace std;
 
@@ -259,7 +259,7 @@ vector<int> rs2_imm_func7(vector<string> instr, vector<int> decoded){
         decoded.insert(decoded.begin(), rs2.begin(), rs2.end());
     }
     if(opcode == r_type){
-        if(instr[0] == "sub", "sra"){
+        if(instr[0] == "sub" | instr[0] == "sra"){
             vector<int> func7 = {0,1,0,0,0,0,0};
             decoded.insert(decoded.begin(), func7.begin(), func7.end());
         }
@@ -298,16 +298,28 @@ vector<int> decode(string str){
     return decoded;
 }
 
-int main(){
-    //take input
-    string input;
-    getline(cin, input);
-    //decode the instruction
-    vector<int> decoded = decode(input);
-    //vector<string> decoded = split(input);
-    //print the decoded instruction
-    for(int i = 0; i < decoded.size(); i++){
-        cout << decoded[i];
+//based on command line arguments, read from a file or interactively
+int main(int argc, char *argv[]){
+    if(argc == 1){
+        string str;
+        while(getline(cin, str)){
+            vector<int> decoded = decode(str);
+            for(int i = 0; i < decoded.size(); i++){
+                cout << decoded[i];
+            }
+            cout << endl;
+        }
     }
-    cout << endl;
+    else{
+        ifstream infile;
+        infile.open(argv[1]);
+        string str;
+        while(getline(infile, str)){
+            vector<int> decoded = decode(str);
+            for(int i = 0; i < decoded.size(); i++){
+                cout << decoded[i];
+            }
+            cout << endl;
+        }
+    }
 }
