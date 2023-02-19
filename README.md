@@ -42,7 +42,7 @@ This is a four stage processor. In the first stage, the instruction correspondin
 ### Future Work
 
 - [ ] Implement pipe lining to eliminate 4 stages.
-- [ ] Add an assembler in python.
+- [x] Add an assembler in python.
 ---
 
 ### Contributors
